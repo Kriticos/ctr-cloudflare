@@ -6,7 +6,7 @@ Container responsável por executar o Cloudflare Tunnel (cloudflared), permitind
 Este projeto sobe um container com o `cloudflared` usando Docker Compose. O tunnel eh inicializado via `tunnel run` e recebe o token pelo arquivo `.env`. A rede `network-share` eh externa e permite expor servicos internos sem alterar o firewall.
 
 ## Requisitos
-- Docker Engine + Docker Compose
+- [Docker Engine + Docker Compose](https://docs.docker.com/engine/install/)
 - Rede Docker externa `network-share` criada previamente
 - Token de Tunnel ativo no Cloudflare
 
